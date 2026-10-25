@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-var-book"
+version = "0.1.0"
+description = "One-factor credit VaR for a small corporate book: ASRF capital versus Monte Carlo, and what concentration does."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
